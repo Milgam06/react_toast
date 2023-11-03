@@ -1,5 +1,6 @@
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
+import * as S from "./styled";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -17,7 +18,15 @@ export const App: React.FC = () => {
         closeButton={false} //닫기 버튼 없애기
         autoClose={5000} //5초 뒤에 자동으로 닫힘
         hideProgressBar //시간 바 없애기
-        pauseOnFocusLoss={true} //포커스를 잃었을 때도 토스트 유지
+        pauseOnFocusLoss={true} //화면을 벗어나면 알림 정지
+      />
+      <S.StyleToastContainer
+        position="bottom-right"
+        limit={3}
+        closeButton={false}
+        autoClose={5000}
+        hideProgressBar
+        pauseOnFocusLoss={true}
       />
     </>
   );
