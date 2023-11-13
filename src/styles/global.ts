@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 10px;
-    font-family: "NanumSquareNeo-Variable";
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   }
 
   :root{
